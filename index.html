@@ -2,15 +2,170 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Главная страница</title>
 	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/sass.css">
     <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]--> 
 
 </head>
 <body>
 	
-	
+	<header class='main-header'>
+
+		<!-- header top line -->
+		<div class="header-top-line">
+			<div class="container row">
+				<div class="col s-6">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col s-6 text-right">
+					<div class="lang-select">
+						<a href="#">английский</a>
+						<a href="#" class="active">русский</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- register area -->
+		<section class='header-login-area'>
+			<div class="container">
+				
+				<!-- heads -->
+				<div class="header-row row">
+					<div class="col s-6">
+						<h1>Найди с кем пойти в кино</h1>
+					</div>
+					<div class="col s-6 text-right">
+						<h2>Смотри онлайн</h2>
+					</div>
+				</div>
+
+				<!-- cols -->
+				<div class="row">
+					<div class="col s-4">
+						
+						<form action="" method="" class="header-login-form">
+
+							<p>Войти</p>
+							<input type="text" placeholder="почта" >
+							<input type="password" placeholder="пароль" >
+							<button type="submit" class="btn btn__white">Войти</button>
+							
+						</form>
+
+						<div class="socio-login">
+							<p>Впервые здесь? Регистрируйся!</p>
+							<a href="#" class="socio-btn socio-btn__reg">Регистрация</a>
+							<a href="#" class="socio-btn socio-btn__fb">Фейсбук</a>
+							<a href="#" class="socio-btn socio-btn__vk">Вконтакте</a>
+						</div>
+
+					</div>
+					<div class="col s-3 to-right">
+						<p class="backed backed__white"><b>Вкино</b> — новейший суперсовременный сервис, предназначенный для удобного поиска ответа на вечный вопрос всех тех, кто неравнодушен к кинематографу: «С кем пойти в кино?»</p>
+						<a href="" class="store store__apple">App store</a>
+						<a href="" class="store store__google">Google play</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<!-- section video and online -->
+	<section class='block container'>
+		<h2>Видеообзоры и кино онлайн</h2>
+
+		<div class="row">
+			
+			<!-- video  -->
+			<div class="col s-8">
+				<div class="video-single">
+					<div class="video"></div>
+					<div class="row">
+						<div class="col s-8">
+							<h3>Мир юрского периода (2014)</h3>
+							<p>Прекрасный фильм для семейного просмотра, очень хороший и интересный</p>
+						</div>
+						<div class="col s-3 to-right">
+							<a href="#" class="share">Поделиться</a>
+							<p class="see">25,786</p>
+							<p class="comments">904</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- online -->
+			<div class="col s-4">
+				<div class="online-list">
+					<h3 class="header">Смотреть онлайн</h3>
+
+					<!-- item -->
+					<article class="online-list-item">
+						<div class="image">
+							<img src="img/film-small.jpg" alt="">
+						</div>
+						<div class="text">
+							<a href="#">Голодные игры: Сойка-пересмешница. Часть I (2014)</a>
+							<p>The Hunger Games: Mockingjay - Part 1</p>
+						</div>
+					</article>
+
+					<!-- item -->
+					<article class="online-list-item">
+						<div class="image">
+							<img src="img/film-small.jpg" alt="">
+						</div>
+						<div class="text">
+							<a href="#">Голодные игры</a>
+							<p>The Hunger Games: Mockingjay - Part 1</p>
+						</div>
+					</article>
+
+					<!-- item -->
+					<article class="online-list-item">
+						<div class="image">
+							<img src="img/film-small.jpg" alt="">
+						</div>
+						<div class="text">
+							<a href="#">Голодные игры: Сойка-пересмешница. Часть I (2014)</a>
+							<p>The Hunger Games: Mockingjay - Part 1</p>
+						</div>
+					</article>
+
+					<!-- item -->
+					<article class="online-list-item">
+						<div class="image">
+							<img src="img/film-small.jpg" alt="">
+						</div>
+						<div class="text">
+							<a href="#">Голодные игры</a>
+							<p>The Hunger Games: Mockingjay - Part 1</p>
+						</div>
+					</article>
+
+					<!-- item -->
+					<article class="online-list-item">
+						<div class="image">
+							<img src="img/film-small.jpg" alt="">
+						</div>
+						<div class="text">
+							<a href="#">Голодные игры</a>
+							<p>The Hunger Games: Mockingjay - Part 1</p>
+						</div>
+					</article>
+
+					<a href="#" class="text-right all">смотреть все</a>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<!-- script -->
     <script src="js/plugins.js"></script>

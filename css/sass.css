@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* фундамент проекта */
+/* резет */
 /* start the foundation style */
 /* RESET */
 html, body, div, span, applet, object, iframe,
@@ -53,7 +54,7 @@ table {
 }
 
 /* базовый фрэймворк */
-/* сетка */
+/* млдули */
 /* modul section */
 .col {
   float: left;
@@ -147,7 +148,13 @@ table {
   width: 20%;
 }
 
-/* сетка */
+/* container */
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* main fraimwork start here */
 .inbox, .col, i, .ico {
   box-sizing: border-box;
@@ -161,14 +168,14 @@ table {
   float: right;
 }
 
-.inline, .row__inline > .col, i, .ico {
+.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn {
   display: inline-block;
   *display: inline;
   vertical-align: top;
   zoom: 1;
 }
 
-.clear, .row:after, .clearfix:after {
+.clear, .row:after, .clearfix:after, .online-list-item:after {
   content: " ";
   display: block;
   height: 0;
@@ -182,18 +189,50 @@ i, .ico {
   text-indent: -9999px;
 }
 
-/* сетка */
-@font-face {
+/* colors */
+/* fonts */
+/*@font-face {
   font-family: 'Gotham';
-  src: url("fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/GothamPro-Medium.otf") format("opentype"), url("fonts/GothamPro-Medium.woff") format("woff"), url("fonts/GothamPro-Medium.ttf") format("truetype"), url("fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium") format("svg");
+  src: url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),  url('fonts/GothamPro-Medium.otf')  format('opentype'),
+         url('fonts/GothamPro-Medium.woff') format('woff'), url('fonts/GothamPro-Medium.ttf')  format('truetype'), url('fonts/GothamPro-Medium.svg#fonts/GothamPro-Medium') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-.font {
-  font-family: 'Gotham', Arial, sans-serif;
+}*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
 }
 
-/* сетка */
+h1, h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #242424;
+  font-weight: 300;
+}
+
+p, li, span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+}
+
+strong, b {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+a:hover {
+  text-decoration: underline;
+  color: #54cee5;
+}
+
+/* forms */
 form {
   /* custom checkbox*/
 }
@@ -203,8 +242,17 @@ form select,
 form input[type='password'] {
   box-sizing: border-box;
   outline: none;
-  background: none;
+  border: none;
   text-align: left;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-bottom: 5px;
 }
 form label {
   cursor: pointer;
@@ -235,23 +283,262 @@ form input[type="checkbox"]:checked + label::before {
   background: url(img/ico-checkbox-active.png) no-repeat;
 }
 
-/* сетка */
+/* buttons */
 /* btn styles */
 .btn {
   display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
   border: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn__white {
+  background: #fff;
+  border-top: 1px solid #3c96af;
+  border-bottom: 1px solid #3c96af;
+  color: #54cee5;
+}
+.btn:hover {
+  opacity: .9;
+}
+
+/* hrefs */
+.share {
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+  text-decoration: none;
+  padding-left: 20px;
+  display: block;
+  background: url(img/ico-share.png) no-repeat center left;
+}
+
+.see {
+  font-size: 18px;
+  line-height: 22px;
+  color: #242424;
+  padding-left: 30px;
+  background: url(img/ico-eye--blue.png) no-repeat center left;
+}
+
+.comments {
+  font-size: 18px;
+  line-height: 22px;
+  color: #242424;
+  padding-left: 30px;
+  background: url(img/ico-talk.png) no-repeat center left;
+}
+
+/*  modules */
+/* header-top-line */
+.header-top-line {
+  min-width: 970px;
+  background: #54cee5;
+  padding: 15px 0;
+}
+.header-top-line .logo img {
+  width: 104px;
+  height: 34px;
+}
+
+.lang-select {
+  margin-top: 10px;
+}
+.lang-select a {
+  font-size: 14px;
+  text-decoration: underline;
+  opacity: .6;
+  color: #fff;
+  margin-right: 10px;
+}
+.lang-select .active {
+  font-weight: 600;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* header-login-form */
+.header-login-form p,
+.socio-login p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/*socio-login*/
+.socio-login .socio-btn {
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  font-size: 0;
+  text-decoration: none;
+}
+.socio-login .socio-btn__reg {
+  background: url(img/ico-register.png) no-repeat center;
+}
+.socio-login .socio-btn__reg:hover {
+  background: url(img/ico-register--hover.png) no-repeat center;
+}
+.socio-login .socio-btn__fb {
+  background: url(img/ico-register-fb.png) no-repeat center;
+}
+.socio-login .socio-btn__fb:hover {
+  background: url(img/ico-register-fb--hover.png) no-repeat center;
+}
+.socio-login .socio-btn__vk {
+  background: url(img/ico-register-vk.png) no-repeat center;
+}
+.socio-login .socio-btn__vk:hover {
+  background: url(img/ico-register-vk--hover.png) no-repeat center;
+}
+
+/* backed */
+.backed {
+  padding: 15px;
+  font-size: 14px;
+  color: #242424;
+  border-radius: 5px;
+}
+.backed__white {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* store hrefs */
+.store {
+  width: 168px;
+  height: 50px;
+  display: block;
+  font-size: 0;
+  text-decoration: none;
+}
+.store:hover {
+  opacity: .8;
+}
+.store__apple {
+  background: url(img/ico-app-store.png) no-repeat center;
+}
+.store__google {
+  background: url(img/ico-google-play.png) no-repeat center;
+}
+
+/* section block type*/
+.block h2 {
+  font-size: 30px;
+  padding: 35px 0 10px;
+  border-bottom: 1px solid #6f6f6f;
+  margin-bottom: 25px;
+}
+
+/* video-single */
+.video-single {
+  margin-bottom: 15px;
+}
+.video-single .video {
+  width: 100%;
+  min-height: 350px;
+  background: #242424;
+  margin-bottom: 20px;
+}
+.video-single h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #242424;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.video-single p {
+  font-size: 18px;
+  line-height: 22px;
+}
+.video-single .share, .video-single .see {
+  margin-bottom: 15px;
+}
+
+/* online-list */
+.online-list .header {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  padding: 10px;
+  background: #54cee5;
+  margin-bottom: 10px;
+}
+.online-list .all {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #54cee5;
+  text-decoration: none;
+  padding: 15px 0 10px;
+  font-weight: 400;
+}
+.online-list .all:hover {
+  text-decoration: underline;
+}
+
+/* online-list-item */
+.online-list-item {
+  margin-bottom: 20px;
+}
+.online-list-item .image {
+  float: left;
+}
+.online-list-item .image img {
+  width: 40px;
+}
+.online-list-item .text {
+  padding-left: 45px;
+}
+.online-list-item .text a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #242424;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.online-list-item .text a:hover {
+  color: #54cee5;
+  text-decoration: underline;
+}
+.online-list-item .text p {
+  font-size: 14px;
+  color: #9fa8b5;
+  font-weight: 400;
 }
 
 /* проектный слой  */
-/* страница  @import 'sass/project/grid.scss'; */
-/* косметический слой  */
-/* модификаторы  @import 'sass/cosmetics/grid.scss'; */
-/* контектстный слой  */
-/* адаптивность  @import 'sass/context/grid.scss'; */
-
-/*# sourceMappingURL=sass.css.map */
+/* главная лэнд */
+/* header-login-area */
+.header-login-area {
+  min-width: 970px;
+  background: url(img/background--header-main.jpg) no-repeat center top;
+  background-size: 100% 100%;
+  min-height: 430px;
+}
+.header-login-area .header-row h1, .header-login-area .header-row h2 {
+  color: #fff;
+  line-height: 65px;
+}
+.header-login-area .header-login-form {
+  margin-top: 20px;
+}
+.header-login-area .socio-login {
+  margin-top: 52px;
+}
+.header-login-area .backed {
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+.header-login-area .store {
+  margin-bottom: 10px;
+}
