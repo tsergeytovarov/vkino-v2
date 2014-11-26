@@ -537,3 +537,214 @@ form{
         @extend .clear;
     }
 }
+
+/* tab-control */
+
+.tab-control{
+    a{
+        font-size: 18px;
+        @extend .inline;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    .girls{
+        color: #acb4bf;
+        padding-left: 20px;
+        background: url(img/ico-girl.png) no-repeat center left;
+        border-bottom: 3px solid transparent;
+        
+        &.active{
+            color: $pink;
+            background: url(img/ico-girl--active.png) no-repeat center left;
+            border-bottom: 3px solid $pink;
+        }
+    }
+
+    .boys{
+        color: #acb4bf;
+        padding-right: 20px;
+        background: url(img/ico-boy.png) no-repeat center right;
+        border-bottom: 3px solid transparent;
+        
+        &.active{
+            color: $blue;
+            background: url(img/ico-boy--active.png) no-repeat center right;
+            border-bottom: 3px solid $blue;
+        }
+    }
+}
+
+/* user-card */
+
+.user-card{
+    text-align: center;
+    text-decoration: none;
+    
+    .image{
+        width: 162px;
+        height: 162px;
+        @extend .inbox;
+        padding: 6px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        &:hover{
+            border: 3px solid $blue;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    p{
+        font-size: 24px;
+        line-height: 28px;
+        color: #788081;
+        font-weight: 300;
+        margin-bottom: 5px;
+        text-decoration: none;
+    }
+}
+
+.rait{
+    font-size: 0;
+    text-align: center;
+
+    span{
+        display: inline-block;
+        width: 18px;
+        height: 16px;
+        margin: 0 2px;
+        background: url(img/ico-rait.png) no-repeat center;
+    }
+
+    &.star-1{
+        span{
+            &:nth-child(1){
+                background: url(img/ico-rait--active.png) no-repeat center;
+            }
+        }
+    }
+
+    &.star-2{
+        span{
+            &:nth-child(1),
+            &:nth-child(2){
+                background: url(img/ico-rait--active.png) no-repeat center;
+            }
+        }
+    }
+
+    &.star-3{
+        span{
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3){
+                background: url(img/ico-rait--active.png) no-repeat center;
+            }
+        }
+    }
+
+    &.star-4{
+        span{
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4){
+                background: url(img/ico-rait--active.png) no-repeat center;
+            }
+        }
+    }
+
+    &.star-5{
+        span{
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5){
+                background: url(img/ico-rait--active.png) no-repeat center;
+            }
+        }
+    }
+
+    &__pink{
+        span{
+            width: 23px;
+            height: 22px;
+            background: url(img/ico-rait--pink.png) no-repeat center;
+        }
+
+        &.star-1{
+            span{
+                &:nth-child(1){
+                    background: url(img/ico-rait--pink--active.png) no-repeat center;
+                }
+            }
+        }
+
+        &.star-2{
+            span{
+                &:nth-child(1),
+                &:nth-child(2){
+                    background: url(img/ico-rait--pink--active.png) no-repeat center;
+                }
+            }
+        }
+
+        &.star-3{
+            span{
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3){
+                    background: url(img/ico-rait--pink--active.png) no-repeat center;
+                }
+            }
+        }
+
+        &.star-4{
+            span{
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4){
+                    background: url(img/ico-rait--pink--active.png) no-repeat center;
+                }
+            }
+        }
+
+        &.star-5{
+            span{
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5){
+                    background: url(img/ico-rait--pink--active.png) no-repeat center;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+/* */
+
+.js-tab{
+    display: none;
+
+    &.active{
+        display: block;
+    }
+}

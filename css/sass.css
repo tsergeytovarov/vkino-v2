@@ -156,7 +156,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico {
+.inbox, .col, i, .ico, .user-card .image {
   box-sizing: border-box;
 }
 
@@ -168,7 +168,7 @@ table {
   float: right;
 }
 
-.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn {
+.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn, .tab-control a {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -514,6 +514,123 @@ form input[type="checkbox"]:checked + label::before {
   font-size: 14px;
   color: #9fa8b5;
   font-weight: 400;
+}
+
+/* tab-control */
+.tab-control a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.tab-control a:hover {
+  text-decoration: none;
+}
+.tab-control .girls {
+  color: #acb4bf;
+  padding-left: 20px;
+  background: url(img/ico-girl.png) no-repeat center left;
+  border-bottom: 3px solid transparent;
+}
+.tab-control .girls.active {
+  color: #ed5889;
+  background: url(img/ico-girl--active.png) no-repeat center left;
+  border-bottom: 3px solid #ed5889;
+}
+.tab-control .boys {
+  color: #acb4bf;
+  padding-right: 20px;
+  background: url(img/ico-boy.png) no-repeat center right;
+  border-bottom: 3px solid transparent;
+}
+.tab-control .boys.active {
+  color: #54cee5;
+  background: url(img/ico-boy--active.png) no-repeat center right;
+  border-bottom: 3px solid #54cee5;
+}
+
+/* user-card */
+.user-card {
+  text-align: center;
+  text-decoration: none;
+}
+.user-card .image {
+  width: 162px;
+  height: 162px;
+  padding: 6px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.user-card .image:hover {
+  border: 3px solid #54cee5;
+}
+.user-card .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.user-card p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #788081;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.rait {
+  font-size: 0;
+  text-align: center;
+}
+.rait span {
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+  margin: 0 2px;
+  background: url(img/ico-rait.png) no-repeat center;
+}
+.rait.star-1 span:nth-child(1) {
+  background: url(img/ico-rait--active.png) no-repeat center;
+}
+.rait.star-2 span:nth-child(1), .rait.star-2 span:nth-child(2) {
+  background: url(img/ico-rait--active.png) no-repeat center;
+}
+.rait.star-3 span:nth-child(1), .rait.star-3 span:nth-child(2), .rait.star-3 span:nth-child(3) {
+  background: url(img/ico-rait--active.png) no-repeat center;
+}
+.rait.star-4 span:nth-child(1), .rait.star-4 span:nth-child(2), .rait.star-4 span:nth-child(3), .rait.star-4 span:nth-child(4) {
+  background: url(img/ico-rait--active.png) no-repeat center;
+}
+.rait.star-5 span:nth-child(1), .rait.star-5 span:nth-child(2), .rait.star-5 span:nth-child(3), .rait.star-5 span:nth-child(4), .rait.star-5 span:nth-child(5) {
+  background: url(img/ico-rait--active.png) no-repeat center;
+}
+.rait__pink span {
+  width: 23px;
+  height: 22px;
+  background: url(img/ico-rait--pink.png) no-repeat center;
+}
+.rait__pink.star-1 span:nth-child(1) {
+  background: url(img/ico-rait--pink--active.png) no-repeat center;
+}
+.rait__pink.star-2 span:nth-child(1), .rait__pink.star-2 span:nth-child(2) {
+  background: url(img/ico-rait--pink--active.png) no-repeat center;
+}
+.rait__pink.star-3 span:nth-child(1), .rait__pink.star-3 span:nth-child(2), .rait__pink.star-3 span:nth-child(3) {
+  background: url(img/ico-rait--pink--active.png) no-repeat center;
+}
+.rait__pink.star-4 span:nth-child(1), .rait__pink.star-4 span:nth-child(2), .rait__pink.star-4 span:nth-child(3), .rait__pink.star-4 span:nth-child(4) {
+  background: url(img/ico-rait--pink--active.png) no-repeat center;
+}
+.rait__pink.star-5 span:nth-child(1), .rait__pink.star-5 span:nth-child(2), .rait__pink.star-5 span:nth-child(3), .rait__pink.star-5 span:nth-child(4), .rait__pink.star-5 span:nth-child(5) {
+  background: url(img/ico-rait--pink--active.png) no-repeat center;
+}
+
+/* */
+.js-tab {
+  display: none;
+}
+.js-tab.active {
+  display: block;
 }
 
 /* проектный слой  */
