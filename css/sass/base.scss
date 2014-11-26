@@ -306,6 +306,15 @@ form{
     background: url(img/ico-talk.png) no-repeat center left;
 }
 
+.like{
+    font-size: 13px!important;
+    line-height: 18px;
+    color: #fff;
+    padding-left: 25px;
+    background: url(img/ico-hearth.png) no-repeat center left;
+}
+
+
 /*  modules */
 
 /* header-top-line */
@@ -737,9 +746,76 @@ form{
 
 }
 
+/* ribbon */
+.ribbon{
+    width: 1300px;
+    height: 386px;
+    @extend .inbox;
+    padding: 0 180px 0 180px;
+    background: url(img/background-top-film.png) no-repeat center;
+    position: relative;
+    left: -180px;
+
+    h2{
+        color: #fff;
+        line-height: 60px;
+    }
+
+    .col{
+        padding: 0 5px;
+    }
+}
+
+/*.film-with-over*/
+.film-with-over{
+    position: relative;
+    height: 264px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+
+    &:hover{
+        .over{
+            display: block;
+        }
+    }
+
+    .over{
+        width: 155px;
+        height: 240px;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        padding: 10px;
+        @extend .inbox;
+        background: rgba(0,0,0,.8);
+        display: none;
+
+        h3{
+            font-size: 30px;
+            line-height: 30px;
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+
+        p{
+            font-size: 18px;
+            color: #fff;
+        }
+
+        &-bottom{
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+    }
+}
 
 
-/* */
+/* js */
 
 .js-tab{
     display: none;

@@ -156,7 +156,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico, .user-card .image {
+.inbox, .col, i, .ico, .user-card .image, .ribbon, .film-with-over .over {
   box-sizing: border-box;
 }
 
@@ -333,6 +333,14 @@ form input[type="checkbox"]:checked + label::before {
   color: #242424;
   padding-left: 30px;
   background: url(img/ico-talk.png) no-repeat center left;
+}
+
+.like {
+  font-size: 13px !important;
+  line-height: 18px;
+  color: #fff;
+  padding-left: 25px;
+  background: url(img/ico-hearth.png) no-repeat center left;
 }
 
 /*  modules */
@@ -625,7 +633,63 @@ form input[type="checkbox"]:checked + label::before {
   background: url(img/ico-rait--pink--active.png) no-repeat center;
 }
 
-/* */
+/* ribbon */
+.ribbon {
+  width: 1300px;
+  height: 386px;
+  padding: 0 180px 0 180px;
+  background: url(img/background-top-film.png) no-repeat center;
+  position: relative;
+  left: -180px;
+}
+.ribbon h2 {
+  color: #fff;
+  line-height: 60px;
+}
+.ribbon .col {
+  padding: 0 5px;
+}
+
+/*.film-with-over*/
+.film-with-over {
+  position: relative;
+  height: 264px;
+  overflow: hidden;
+}
+.film-with-over img {
+  width: 100%;
+}
+.film-with-over:hover .over {
+  display: block;
+}
+.film-with-over .over {
+  width: 155px;
+  height: 240px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.film-with-over .over h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.film-with-over .over p {
+  font-size: 18px;
+  color: #fff;
+}
+.film-with-over .over-bottom {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+/* js */
 .js-tab {
   display: none;
 }
@@ -658,4 +722,8 @@ form input[type="checkbox"]:checked + label::before {
 }
 .header-login-area .store {
   margin-bottom: 10px;
+}
+
+.big-ribbon {
+  margin-top: 50px;
 }
