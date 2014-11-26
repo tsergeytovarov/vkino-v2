@@ -168,14 +168,15 @@ table {
   float: right;
 }
 
-.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn, .tab-control a {
+.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn, .tab-control a, .bx-prev, .bx-next {
   display: inline-block;
   *display: inline;
   vertical-align: top;
   zoom: 1;
 }
 
-.clear, .row:after, .clearfix:after, .online-list-item:after {
+.clear, .row:after, .clearfix:after, .online-list-item:after, .slider-carousel:after,
+.slider-carousel-3:after, .cinema-item:after {
   content: " ";
   display: block;
   height: 0;
@@ -345,6 +346,26 @@ form input[type="checkbox"]:checked + label::before {
 .like__gray {
   color: #9fa8b5;
   background: url(img/ico-hearth--gray.png) no-repeat center left;
+}
+
+.to-vk {
+  line-height: 30px;
+  padding-left: 40px;
+  background: url(img/ico-vk.png) no-repeat left center;
+  font-size: 14px;
+  color: #242424;
+  display: block;
+}
+.to-vk:hover {
+  color: #242424;
+  text-decoration: none;
+  opacity: .9;
+}
+
+.copyright {
+  line-height: 30px;
+  font-size: 12px;
+  color: #727272;
 }
 
 /*  modules */
@@ -751,6 +772,81 @@ form input[type="checkbox"]:checked + label::before {
 .money-item table tr td:last-child {
   width: 116px;
   font-size: 14px;
+}
+
+/* slider-carousel */
+.bx-wrapper, .bx-viewport {
+  position: relative;
+  min-height: 105px;
+}
+
+.bx-controls-direction {
+  position: absolute;
+  top: -59px;
+  right: 0;
+  background: #fff;
+  width: 80px;
+  height: 34px;
+}
+
+.bx-prev, .bx-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #54cee5;
+  margin: 5px;
+  font-size: 0;
+}
+.bx-prev:hover, .bx-next:hover {
+  background-color: #38a2ce;
+}
+
+.bx-prev {
+  background-image: url(img/ico-prev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bx-next {
+  background-image: url(img/ico-next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* cinema-item */
+.cinema-item img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  float: left;
+}
+.cinema-item .text {
+  padding-left: 90px;
+}
+.cinema-item .text a {
+  font-size: 20px;
+  color: #242424;
+  font-weight: 400;
+}
+.cinema-item .text a:hover {
+  color: #54cee5;
+  text-decoration: underline;
+}
+.cinema-item .text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #788081;
+  font-weight: 400;
+}
+.cinema-item .text p span {
+  font-size: 12px;
+}
+
+/* footer line */
+.footer-line {
+  padding: 10px 0;
+  background: #d3d5d6;
+  margin-top: 50px;
 }
 
 /* js */
