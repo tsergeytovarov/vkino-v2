@@ -1,0 +1,59 @@
+form{
+    input[type='text'], 
+    textarea, 
+    select, 
+    input[type='password']{
+        box-sizing: border-box;
+        outline: none;
+        background: none;
+        text-align: left;
+
+        &:focus{
+
+        }
+
+    }
+
+    input::-webkit-input-placeholder{
+        
+    }
+    input::-moz-placeholde{
+        
+    }
+
+    label{
+        cursor: pointer;
+    }
+
+    button{
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /* custom checkbox*/
+    input[type="checkbox"]{
+        display: none;
+        margin: 20px;
+    }
+
+    input[type="checkbox"] + label{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    input[type="checkbox"] + label::before{
+        content: "";
+        display: inline-block;
+        height: 49px;
+        width: 49px;
+        background: url(img/ico-checkbox.png) no-repeat;
+        margin: 0 10px 0 0;
+        position: relative;
+        top: 16px;
+
+    }
+
+    input[type="checkbox"]:checked + label::before {
+        background: url(img/ico-checkbox-active.png) no-repeat;
+    }
+}

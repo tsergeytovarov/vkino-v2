@@ -1,0 +1,23 @@
+/* фундамент проекта */
+@import 'sass/foundation/reset.scss';
+
+/* базовый фрэймворк */
+
+/* сетка */ @import 'sass/base/grid.scss';
+/* сетка */ @import 'sass/base/fraim.scss';
+/* сетка */ @import 'sass/base/fonts.scss';
+/* сетка */ @import 'sass/base/form.scss';
+/* сетка */ @import 'sass/base/button.scss';
+
+
+/* проектный слой  */
+
+/* страница  @import 'sass/project/grid.scss'; */
+
+/* косметический слой  */
+
+/* модификаторы  @import 'sass/cosmetics/grid.scss'; */
+
+/* контектстный слой  */
+
+/* адаптивность  @import 'sass/context/grid.scss'; */

@@ -1,0 +1,28 @@
+/* main fraimwork start here */
+.inbox{
+	box-sizing: border-box;
+}
+.to-left{ float: left }
+.to-right{ float: right }
+.inline{
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    zoom: 1; 
+}
+.clear{
+	content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clearfix:after{ @extend .clear; }
+
+i, .ico{
+    @extend .inbox;
+    @extend .inline;
+    font-size: 0;
+    text-indent: -9999px;
+}
