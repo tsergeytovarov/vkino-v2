@@ -312,6 +312,11 @@ form{
     color: #fff;
     padding-left: 25px;
     background: url(img/ico-hearth.png) no-repeat center left;
+
+    &__gray{
+        color: #9fa8b5;
+        background: url(img/ico-hearth--gray.png) no-repeat center left;
+    }
 }
 
 
@@ -489,19 +494,20 @@ form{
         background: $blue;
         margin-bottom: 10px;
     }
+}
 
-    .all{
-        display: block;
-        font-size: 14px;
-        line-height: 16px;
-        color: $blue;
-        text-decoration: none;
-        padding: 15px 0 10px;
-        font-weight: 400;
+/* all */
+.all{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: $blue;
+    text-decoration: none;
+    padding: 15px 0 10px;
+    font-weight: 400;
 
-        &:hover{
-            text-decoration: underline;
-        }
+    &:hover{
+        text-decoration: underline;
     }
 }
 
@@ -814,6 +820,84 @@ form{
     }
 }
 
+/* feedback-item */
+.feedback-item{
+
+    .image{
+        img{
+            width: 100%;
+        }
+    }
+
+    .user{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        position: relative;
+            top: 5px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 21px;
+        color: $black;
+        margin-bottom: 0px;
+
+        span{
+            color: #9fa8b5;
+        }  
+    }
+
+    h3{
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .content{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    a{
+        color: $blue;
+    }
+}
+
+/* money-item */
+
+.money-item{
+    table{
+        tr{
+            td{
+                padding: 10px;
+                font-size: 18px;
+                line-height: 21px;
+                vertical-align: middle;
+                font-weight: 400;
+
+                span{
+                    display: block;
+                    color: #9fa8b5;
+                }
+
+                &:first-child{
+                    width: 40px;
+                    text-align: center;
+                    padding: 10px 2px;
+                }
+
+                &:last-child{
+                    width:116px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 
 /* js */
 

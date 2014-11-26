@@ -342,6 +342,10 @@ form input[type="checkbox"]:checked + label::before {
   padding-left: 25px;
   background: url(img/ico-hearth.png) no-repeat center left;
 }
+.like__gray {
+  color: #9fa8b5;
+  background: url(img/ico-hearth--gray.png) no-repeat center left;
+}
 
 /*  modules */
 /* header-top-line */
@@ -479,7 +483,9 @@ form input[type="checkbox"]:checked + label::before {
   background: #54cee5;
   margin-bottom: 10px;
 }
-.online-list .all {
+
+/* all */
+.all {
   display: block;
   font-size: 14px;
   line-height: 16px;
@@ -488,7 +494,7 @@ form input[type="checkbox"]:checked + label::before {
   padding: 15px 0 10px;
   font-weight: 400;
 }
-.online-list .all:hover {
+.all:hover {
   text-decoration: underline;
 }
 
@@ -687,6 +693,64 @@ form input[type="checkbox"]:checked + label::before {
   position: absolute;
   bottom: 5px;
   left: 5px;
+}
+
+/* feedback-item */
+.feedback-item .image img {
+  width: 100%;
+}
+.feedback-item .user {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.feedback-item p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #242424;
+  margin-bottom: 0px;
+}
+.feedback-item p span {
+  color: #9fa8b5;
+}
+.feedback-item h3 {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.feedback-item .content {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.feedback-item a {
+  color: #54cee5;
+}
+
+/* money-item */
+.money-item table tr td {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+.money-item table tr td span {
+  display: block;
+  color: #9fa8b5;
+}
+.money-item table tr td:first-child {
+  width: 40px;
+  text-align: center;
+  padding: 10px 2px;
+}
+.money-item table tr td:last-child {
+  width: 116px;
+  font-size: 14px;
 }
 
 /* js */
