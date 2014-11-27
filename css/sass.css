@@ -803,6 +803,10 @@ form input[type="checkbox"]:checked + label::before {
 }
 
 /* slider-carousel */
+.slider-carousel-1 .col {
+  padding: 0 5px !important;
+}
+
 .bx-wrapper, .bx-viewport {
   position: relative;
   min-height: 105px;
@@ -827,6 +831,10 @@ form input[type="checkbox"]:checked + label::before {
 }
 .bx-prev:hover, .bx-next:hover {
   background-color: #38a2ce;
+}
+
+.slider-all .bx-controls-direction {
+  top: 48px;
 }
 
 .bx-prev {
@@ -854,7 +862,7 @@ form input[type="checkbox"]:checked + label::before {
 .cinema-item .text a {
   font-size: 20px;
   color: #242424;
-  font-weight: 400;
+  font-weight: 300;
 }
 .cinema-item .text a:hover {
   color: #54cee5;

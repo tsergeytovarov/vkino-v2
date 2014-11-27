@@ -36,5 +36,9 @@ $(function(){
 		mode: 'fade',
 		speed: 1000
 	});
+
+	$('.slider-carousel-1').bxSlider({
+		pager: false
+	});
 	
 });
