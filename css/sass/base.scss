@@ -871,8 +871,15 @@ form{
 .feedback-item{
 
     .image{
+        position: relative;
+        overflow: hidden;
+        min-height: 90px;
         img{
             width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 90px;
         }
     }
 
@@ -925,6 +932,16 @@ form{
                 line-height: 21px;
                 vertical-align: middle;
                 font-weight: 400;
+
+                a{
+                    color: $black;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: $blue;
+                        text-decoration: underline;
+                    }
+                }
 
                 span{
                     display: block;

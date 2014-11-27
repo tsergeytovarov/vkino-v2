@@ -745,8 +745,17 @@ form input[type="checkbox"]:checked + label::before {
 }
 
 /* feedback-item */
+.feedback-item .image {
+  position: relative;
+  overflow: hidden;
+  min-height: 90px;
+}
 .feedback-item .image img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 90px;
 }
 .feedback-item .user {
   border-radius: 50%;
@@ -787,6 +796,14 @@ form input[type="checkbox"]:checked + label::before {
   line-height: 21px;
   vertical-align: middle;
   font-weight: 400;
+}
+.money-item table tr td a {
+  color: #242424;
+  text-decoration: none;
+}
+.money-item table tr td a:hover {
+  color: #54cee5;
+  text-decoration: underline;
 }
 .money-item table tr td span {
   display: block;
