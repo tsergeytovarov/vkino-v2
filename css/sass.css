@@ -730,6 +730,10 @@ form input[type="checkbox"]:checked + label::before {
   font-weight: 300;
   margin-bottom: 5px;
 }
+.film-with-over .over h3.small {
+  font-size: 20px;
+  line-height: 26px;
+}
 .film-with-over .over p {
   font-size: 18px;
   color: #fff;

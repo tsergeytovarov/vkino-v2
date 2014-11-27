@@ -847,6 +847,11 @@ form{
             color: #fff;
             font-weight: 300;
             margin-bottom: 5px;
+
+            &.small{
+                font-size: 20px;
+                line-height: 26px;
+            }
         }
 
         p{

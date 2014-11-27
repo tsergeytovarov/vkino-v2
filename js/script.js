@@ -34,7 +34,7 @@ $(function(){
 		controls: false,
 		pager: false,
 		mode: 'fade',
-		speed: 5
+		speed: 1000
 	});
 	
 });
