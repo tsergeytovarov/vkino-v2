@@ -2,7 +2,7 @@
 .header-login-area{
 	min-width: 970px;
 	background: url(img/background--header-main.jpg) no-repeat center top;
-	background-size: 100% 100%;
+	background-size: cover;
 	min-height: 430px;
 
 	.header-row{
@@ -24,6 +24,8 @@
 	.backed{
 		margin-top: 45px;
 		margin-bottom: 35px;
+		position: relative;
+		left: 56px;
 	}
 
 	.store{
