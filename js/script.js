@@ -40,5 +40,24 @@ $(function(){
 	$('.slider-carousel-1').bxSlider({
 		pager: false
 	});
+
+	$('.see-password').on('click', function(){
+		var field = $('.changer');
+
+		$(this).toggleClass('active');
+
+		if( field.attr('type') == 'password')
+			field.attr('type','text');
+
+		else if( field.attr('type') == 'text' )
+			field.attr('type','password');
+
+		return false;
+	})
+
+	$('.save-me').on('click', function(){
+		$(this).toggleClass('active');
+		return false;
+	})
 	
 });

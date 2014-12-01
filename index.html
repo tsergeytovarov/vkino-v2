@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница</title>
-	
+
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/sass.css">
     <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]--> 
@@ -52,7 +53,12 @@
 
 							<p>Войти</p>
 							<input type="text" placeholder="почта" >
-							<input type="password" placeholder="пароль" >
+							<div class="password-field">
+								<input type="password" placeholder="пароль" class="changer" >
+								<a href="#" class="see-password" title="Посомотреть символы"></a>
+								<a href="#" class="save-me" title="Запомнить меня"></a>
+								<a href="#" class="reset" title="Забыли паорль?"></a>
+							</div>	
 							<button type="submit" class="btn btn__white">Войти</button>
 							
 						</form>

@@ -390,6 +390,45 @@ form input[type="checkbox"]:checked + label::before {
   color: #727272;
 }
 
+.see-password {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 62px;
+  width: 18px;
+  height: 10px;
+  background: url(img/ico-eye.png) no-repeat center;
+}
+.see-password:hover, .see-password.active {
+  background: url(img/ico-eye--blue.png) no-repeat center;
+}
+
+.save-me {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  top: 15px;
+  right: 37px;
+  background: url(img/ico-brain.png) no-repeat center;
+}
+.save-me:hover, .save-me.active {
+  background: url(img/ico-brain-blue.png) no-repeat center;
+}
+
+.reset {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  top: 15px;
+  right: 13px;
+  background: url(img/ico-reset.png) no-repeat center;
+}
+.reset:hover {
+  background: url(img/ico-reset-blue.png) no-repeat center;
+}
+
 /*  modules */
 /* header-top-line */
 .header-top-line {
@@ -425,6 +464,14 @@ form input[type="checkbox"]:checked + label::before {
   line-height: 22px;
   margin-bottom: 10px;
   color: #fff;
+}
+
+.password-field {
+  position: relative;
+}
+.password-field input[type='text'],
+.password-field input[type='password'] {
+  padding-right: 110px;
 }
 
 /*socio-login*/
