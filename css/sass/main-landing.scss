@@ -24,8 +24,8 @@
 	.backed{
 		margin-top: 45px;
 		margin-bottom: 35px;
-		position: relative;
-		left: 56px;
+		width: 260px;
+		@extend .inline;
 	}
 
 	.store{
@@ -37,4 +37,17 @@
 
 .big-ribbon{
 	margin-top: 50px;
+}
+
+.about-project{
+	margin-top: 10px;
+	@extend .inline;
+}
+
+@media (max-width: 1300px){
+
+	.big-ribbon{
+		overflow: hidden;
+	}
+	
 }

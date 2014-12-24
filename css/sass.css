@@ -168,7 +168,7 @@ table {
   float: right;
 }
 
-.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn, .tab-control a, .bx-prev, .bx-next {
+.inline, .row__inline > .col, i, .ico, .lang-select a, .socio-login .socio-btn, .tab-control a, .bx-prev, .bx-next, .header-login-area .backed, .about-project {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -477,29 +477,29 @@ form input[type="checkbox"]:checked + label::before {
 /*socio-login*/
 .socio-login .socio-btn {
   width: 64px;
-  height: 64px;
+  padding-top: 70px;
   box-sizing: border-box;
   margin-right: 10px;
   font-size: 0;
   text-decoration: none;
 }
 .socio-login .socio-btn__reg {
-  background: url(img/ico-register.png) no-repeat center;
+  background: url(img/ico-register.png) no-repeat center top;
 }
 .socio-login .socio-btn__reg:hover {
-  background: url(img/ico-register--hover.png) no-repeat center;
+  background: url(img/ico-register--hover.png) no-repeat center top;
 }
 .socio-login .socio-btn__fb {
-  background: url(img/ico-register-fb.png) no-repeat center;
+  background: url(img/ico-register-fb.png) no-repeat center top;
 }
 .socio-login .socio-btn__fb:hover {
-  background: url(img/ico-register-fb--hover.png) no-repeat center;
+  background: url(img/ico-register-fb--hover.png) no-repeat center top;
 }
 .socio-login .socio-btn__vk {
-  background: url(img/ico-register-vk.png) no-repeat center;
+  background: url(img/ico-register-vk.png) no-repeat center top;
 }
 .socio-login .socio-btn__vk:hover {
-  background: url(img/ico-register-vk--hover.png) no-repeat center;
+  background: url(img/ico-register-vk--hover.png) no-repeat center top;
 }
 
 /* backed */
@@ -510,6 +510,7 @@ form input[type="checkbox"]:checked + label::before {
   border-radius: 5px;
   text-align: left;
   min-width: 260px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
 }
 .backed__white {
   background: rgba(255, 255, 255, 0.9);
@@ -792,17 +793,8 @@ form input[type="checkbox"]:checked + label::before {
 }
 
 /* feedback-item */
-.feedback-item .image {
-  position: relative;
-  overflow: hidden;
-  min-height: 90px;
-}
 .feedback-item .image img {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 90px;
 }
 .feedback-item .user {
   border-radius: 50%;
@@ -837,8 +829,15 @@ form input[type="checkbox"]:checked + label::before {
 }
 
 /* money-item */
+.money-item table {
+  width: 100%;
+}
+.money-item table tr:first-child td:first-child {
+  width: 20px;
+  padding: 14px 2px 2px;
+}
 .money-item table tr td {
-  padding: 10px;
+  padding: 10px 5px;
   font-size: 18px;
   line-height: 21px;
   vertical-align: middle;
@@ -859,11 +858,15 @@ form input[type="checkbox"]:checked + label::before {
 .money-item table tr td:first-child {
   width: 40px;
   text-align: center;
-  padding: 10px 2px;
+  padding: 2px 2px;
+  vertical-align: top;
 }
 .money-item table tr td:last-child {
   width: 116px;
   font-size: 14px;
+}
+.money-item .money {
+  text-align: right !important;
 }
 
 /* slider-carousel */
@@ -957,6 +960,16 @@ form input[type="checkbox"]:checked + label::before {
   display: block;
 }
 
+/* counter peple */
+.counter-people {
+  font-size: 13px;
+  text-decoration: none;
+  padding: 6px 0 0 20px;
+  color: #fff;
+  margin-top: 70px;
+  background: url(img/ico-person.png) no-repeat center left;
+}
+
 /* проектный слой  */
 /* главная лэнд */
 /* header-login-area */
@@ -979,8 +992,7 @@ form input[type="checkbox"]:checked + label::before {
 .header-login-area .backed {
   margin-top: 45px;
   margin-bottom: 35px;
-  position: relative;
-  left: 56px;
+  width: 260px;
 }
 .header-login-area .store {
   margin-bottom: 10px;
@@ -988,4 +1000,14 @@ form input[type="checkbox"]:checked + label::before {
 
 .big-ribbon {
   margin-top: 50px;
+}
+
+.about-project {
+  margin-top: 10px;
+}
+
+@media (max-width: 1300px) {
+  .big-ribbon {
+    overflow: hidden;
+  }
 }
